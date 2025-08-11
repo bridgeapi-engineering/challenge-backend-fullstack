@@ -1,7 +1,7 @@
 # Backend challenge
-Welcome to Bankin's Java backend challenge.
+Welcome to Bridge's Java backend challenge.
 
-You will be adding to the existing code of this project. Setting up the project requires Java 11 and IntelliJ CE (https://www.jetbrains.com/idea/download).
+You will be adding to the existing code of this project. Setting up the project requires Java 21 and IntelliJ CE (https://www.jetbrains.com/idea/download).
 
 ## Running the project
 The project builds and runs in its initial state. You can start it by typing `./gradlew bootRun` in the console. In IntelliJ, you can run it by creating a new "Run configuration" for the Gradle project "challenge-backend" with the command `bootRun`. This will allow you to use breakpoints for debugging.

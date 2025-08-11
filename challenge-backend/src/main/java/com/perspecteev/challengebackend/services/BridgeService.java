@@ -1,4 +1,4 @@
-package com.bankin.challengebackend.services;
+package com.perspecteev.challengebackend.services;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.bankin.challengebackend.clients.AuthenticateResponse;
-import com.bankin.challengebackend.clients.BridgeClient;
-import com.bankin.challengebackend.clients.GetAccountResponse;
+import com.perspecteev.challengebackend.clients.AuthenticateResponse;
+import com.perspecteev.challengebackend.clients.BridgeClient;
+import com.perspecteev.challengebackend.clients.GetAccountResponse;
 
 /**
  * Bridge is Bankin's SaaS API. This service is where the calls to the API should be implemented.

@@ -1,4 +1,4 @@
-package com.bankin.challengebackend.configuration;
+package com.perspecteev.challengebackend.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.OkHttpClient;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
-import com.bankin.challengebackend.clients.BridgeClient;
+import com.perspecteev.challengebackend.clients.BridgeClient;
 
 @Configuration
 public class BridgeClientConfiguration {

@@ -1,4 +1,4 @@
-package com.bankin.challengebackend.controllers;
+package com.perspecteev.challengebackend.controllers;
 
 import java.io.IOException;
 
@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bankin.challengebackend.services.BridgeService;
+import com.perspecteev.challengebackend.services.BridgeService;
 
 /**
  * MyController.myEndpoint is called when requesting GET /mycontroller/myroute
  * <p>
  * You can try it by running curl -X GET localhost:8080/mycontroller/myroute
  * <p>
- * The BridgeClient has been injected and ready for use. Maybe the controller, method and route need some renaming?
+ * The BridgeClient has been injected and ready for use. Maybe the controller, method and route need some renaming ?
  */
 @RestController
 @RequestMapping("/mycontroller")
