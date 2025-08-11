@@ -19,8 +19,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.squareup.retrofit2:retrofit:2.7.2")
-	implementation("com.squareup.retrofit2:converter-jackson:2.7.2")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

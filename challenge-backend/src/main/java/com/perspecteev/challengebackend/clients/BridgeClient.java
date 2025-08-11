@@ -1,23 +1,21 @@
 package com.perspecteev.challengebackend.clients;
 
-
-import retrofit2.Call;
-import retrofit2.http.GET;
-import retrofit2.http.Header;
-import retrofit2.http.POST;
-import retrofit2.http.Query;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.service.annotation.GetExchange;
+import org.springframework.web.service.annotation.PostExchange;
 
 public interface BridgeClient {
 
-    @POST("/v2/authenticate")
-    Call<AuthenticateResponse> authenticate(@Header("Bankin-Version") String version,
-                                            @Query(value = "email", encoded = true) String email,
-                                            @Query(value = "password", encoded = true) String password,
-                                            @Query("client_id") String clientId,
-                                            @Query("client_secret") String clientSecret);
+    @PostExchange("/v3/aggregation/authorization/token")
+    AuthenticateResponse authenticate(@RequestHeader("Bridge-Version") String version,
+                                      @RequestHeader("Client-Id") String clientId,
+                                      @RequestHeader("Client-Secret") String clientSecret,
+                                      @RequestBody AuthenticateRequest body);
 
-    @GET("/v2/changeme")
-    Call<GetAccountResponse> getAccounts(@Header("Bankin-Version") String version,
-                                         @Header("Authorization") String authorization,
-                                         @Query("param") String param);
+    @GetExchange("/v3/changeme")
+    GetAccountResponse getAccounts(@RequestHeader("Bridge-Version") String version,
+                                   @RequestHeader("Authorization") String authorization,
+                                   @RequestParam("param") String param);
 }
