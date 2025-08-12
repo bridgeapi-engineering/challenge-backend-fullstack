@@ -1,4 +1,4 @@
-package com.bankin.challengebackend.clients;
+package com.perspecteev.challengebackend.clients;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
