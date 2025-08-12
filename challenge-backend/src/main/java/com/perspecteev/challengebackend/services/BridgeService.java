@@ -20,9 +20,7 @@ import com.perspecteev.challengebackend.clients.GetAccountResponse;
 @Component
 public class BridgeService {
 
-    // these are hardcoded for simplicity's sake
-    private static final String USER_EMAIL = "user1@mail.com";
-    private static final String USER_PASSWORD = "a!Strongp#assword1";
+    // hardcoded for simplicity
     private static final UUID USER_UUID = UUID.fromString("26dbc9b4-f87d-4758-8b2c-f445affdb8ee");
 
     @Autowired
